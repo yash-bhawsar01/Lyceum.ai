@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>lyceum.ai</title>
+
+<link
+rel="stylesheet"
+href="style.css"
+>
+
+</head>
+
+<body>
+
+<section
+id="welcome-screen"
+class="screen active"
+>
+
+<div class="welcome-container">
+
+<img
+src="images/main.png"
+class="main-logo"
+>
+
+<p class="subtitle">
+Converse with the greatest minds in history.
+</p>
+
+<button
+id="enter-btn"
+class="main-btn"
+>
+ENTER
+</button>
+
+</div>
+
+</section>
+
+<section
+id="philosopher-screen"
+class="screen"
+>
+
+<div class="topbar">
+
+<h2>
+Choose A Philosopher
+</h2>
+
+<div class="topbar-right">
+
+<select
+id="model-select"
+class="model-select"
+>
+
+<option value="phi3">
+Phi3 (Fast, Lightweight)
+</option>
+
+<option value="llama3">
+Llama3 (Balanced, Smart)
+</option>
+
+<option value="qwen2.5:7b">
+Qwen2.5 (Creative, Detailed)
+</option>
+
+<option value="philosloppy/shockrates-plus">
+Shockrates+ (Philosophical, Experimental)
+</option>
+
+</select>
+
+<img
+src="images/main.png"
+class="header-logo"
+>
+
+</div>
+
+</div>
+
+<div
+id="philosopher-list"
+class="philosopher-list"
+></div>
+
+</section>
+
+<div
+id="info-panel"
+class="info-panel"
+>
+
+<button
+id="close-info"
+class="close-info"
+>
+✕
+</button>
+
+<img
+id="info-image"
+class="info-image"
+src=""
+>
+
+<h1 id="info-name"></h1>
+
+<p id="info-school"></p>
+
+<div
+id="info-intro"
+class="info-intro"
+></div>
+
+<h3 class="topic-title">
+Topics
+</h3>
+
+<div
+id="info-topics"
+class="info-topics"
+></div>
+
+</div>
+
+<section
+id="chat-screen"
+class="screen"
+>
+
+<div
+id="side-menu"
+class="side-menu"
+>
+
+<div class="menu-header">
+
+<h2>
+Options
+</h2>
+
+</div>
+
+
+
+<button
+id="delete-history-btn"
+class="menu-btn"
+>
+Delete Chat History
+</button>
+
+<button
+id="back-btn"
+class="menu-btn"
+>
+Back To Philosophers
+</button>
+
+</div>
+
+<div id="overlay"></div>
+
+<div class="chat-topbar">
+
+<div class="left-topbar">
+
+<button
+id="menu-btn"
+class="hamburger"
+>
+☰
+</button>
+
+<img
+id="chat-philosopher-img"
+class="chat-avatar"
+src=""
+>
+
+<div>
+
+<h2 id="chat-philosopher-name"></h2>
+
+<p id="chat-philosopher-school"></p>
+
+</div>
+
+</div>
+
+<div class="topbar-right">
+
+<select
+id="chat-model-select"
+class="model-select"
+>
+
+<option value="phi3">
+Phi3 (Fast • Lightweight)
+</option>
+
+<option value="llama3">
+Llama3 (Balanced • Smart)
+</option>
+
+<option value="qwen2.5:7b">
+Qwen2.5 (Creative • Detailed)
+</option>
+
+<option value="philosloppy/shockrates-plus">
+Shockrates+ (Philosophical • Experimental)
+</option>
+
+</select>
+
+<img
+src="images/main.png"
+class="header-logo"
+>
+
+</div>
+
+</div>
+
+<div
+id="chat-messages"
+class="chat-messages"
+></div>
+
+<div
+id="thinking"
+class="thinking hidden"
+>
+
+<div class="donut"></div>
+
+</div>
+
+<div class="chat-input-area">
+
+<input
+type="text"
+id="chat-input"
+placeholder="Ask something..."
+>
+
+<button id="send-btn">
+Send
+</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+<div id="mobile-warning">
+
+<div class="mobile-warning-box">
+
+<h1>
+LYCEUM.AI
+</h1>
+
+<p>
+Design isn't fully responsive on phones yet.<br>
+Please use a PC or laptop. (which i am sure i mentioned)
+</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
